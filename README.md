@@ -7,3 +7,6 @@ source activate tensorflow_p36
 generate_cifar10_tfrecords.py --data-dir data
 aws s3 mb s3://tf-booth-bucket
 aws s3 sync data/ s3://tf-booth-bucket/cifar10-dataset/
+```
+
+Run the notebooks under sm_dist_training and sm_hyperparameter_optim
